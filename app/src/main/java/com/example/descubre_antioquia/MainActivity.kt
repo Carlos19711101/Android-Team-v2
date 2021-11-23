@@ -13,11 +13,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.descubre_antioquia.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
+import org.json.JSONArray
+import java.io.IOException
+import java.io.InputStream
 
 class MainActivity : AppCompatActivity() {
 
     private var layoutManager: RecyclerView.LayoutManager? = null
     private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +34,12 @@ class MainActivity : AppCompatActivity() {
 
         adapter = RecyclerAdapter()
         recyclerView.adapter = adapter
+
+
         }
+
+
+
 
 
 }
