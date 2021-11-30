@@ -11,6 +11,8 @@ import com.google.android.material.imageview.ShapeableImageView
 import java.io.IOException
 import java.io.InputStream
 
+
+
 class RecyclerAdapter(private val sitesList : ArrayList<Sites>) : RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -32,8 +34,8 @@ class RecyclerAdapter(private val sitesList : ArrayList<Sites>) : RecyclerView.A
 
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
-        val titleImage : ShapeableImageView = itemView.findViewById(R.id.item_image)
-        val tvHeading : TextView= itemView.findViewById(R.id.item_title)
-        val tvDetail : TextView = itemView.findViewById(R.id.item_detail)
+        val titleImage : ShapeableImageView = itemView.findViewById(R.id.titleImage)
+        val tvHeading : TextView= itemView.findViewById(R.id.tvHeading)
+        val tvDetail : TextView = itemView.findViewById(R.id.tvDetail)
     }
 }
