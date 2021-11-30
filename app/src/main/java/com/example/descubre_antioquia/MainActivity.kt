@@ -1,22 +1,11 @@
 package com.example.descubre_antioquia
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.descubre_antioquia.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.activity_main.*
-import org.json.JSONArray
-import java.io.IOException
-import java.io.InputStream
-import android.widget.ImageView
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -67,7 +56,13 @@ class MainActivity : AppCompatActivity() {
             newArrayList.add(sites)
         }
 
-        newRecyclerView.adapter = RecyclerAdapter(newArrayList)
+        var adapter = RecyclerAdapter(newArrayList)
+        newRecyclerView.adapter = adapter
+        adapter.setOnItemClickListener(object:RecyclerAdapter.onItemClickListener{
+            override fun onItemClick(position:Int){
+                Toast.makeText(this@MainActivity, "You clicked on item no. $position",Toast.LENGTH_SHORT).show()
+            }
+        })
     }
 
 }
