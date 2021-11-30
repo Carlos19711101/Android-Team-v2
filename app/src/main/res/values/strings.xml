@@ -13,4 +13,6 @@
     <string name="general_info">Antioquia es uno de los departamentos de Colombia. Está localizado en la zona noroccidental del país. Su capital es Medellín, segunda ciudad en población y economía de la nación.
 En Antioquia, los veranos son cortos y cálidos, los inviernos son cortos y calurosos y está mojado y nublado todo el año.</string>
     <string name="sitios_recomendados_title">Sitios recomendados</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
