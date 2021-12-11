@@ -8,16 +8,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var newRecyclerView: RecyclerView
     private lateinit var newArrayList: ArrayList<Sites>
-    lateinit var imageId :Array<Int>
-    lateinit var heading : Array<String>
-    lateinit var detail : Array<String>
-    lateinit var desc : Array<String>
-
+    lateinit var imageId: Array<Int>
+    lateinit var heading: Array<String>
+    lateinit var detail: Array<String>
+    lateinit var desc: Array<String>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,7 +40,8 @@ class MainActivity : AppCompatActivity() {
             "El peñón de Guatapé, o piedra del Peñol, es un monolito de 220 metros de altura, localizado en El Peñol-Guatapé",
             "Puente de Occidente. Kanaloa Parque Acuatico. Plaza Mayor Juan de Corral. Iglesia de Nuestra Señora de Chiquinquirá",
             "Pueblo más Bonito de Antioquia, Ciudad de los muchos cerros y Monumento Nacional",
-            "Campo deportivo del Área Metropolitana del Valle de Aburrá","La Atenas del suroeste antioqueño"
+            "Campo deportivo del Área Metropolitana del Valle de Aburrá",
+            "La Atenas del suroeste antioqueño"
         )
 
         desc = arrayOf(
@@ -61,23 +60,23 @@ class MainActivity : AppCompatActivity() {
 
         newArrayList = arrayListOf<Sites>()
         getUserdata()
-        }
+    }
 
     private fun getUserdata() {
-        for (i in imageId.indices){
-            val sites = Sites(imageId[i],heading[i],detail [i])
+        for (i in imageId.indices) {
+            val sites = Sites(imageId[i], heading[i], detail[i])
             newArrayList.add(sites)
         }
 
         var adapter = RecyclerAdapter(newArrayList)
         newRecyclerView.adapter = adapter
-        adapter.setOnItemClickListener(object:RecyclerAdapter.onItemClickListener{
-            override fun onItemClick(position:Int){
+        adapter.setOnItemClickListener(object : RecyclerAdapter.onItemClickListener {
+            override fun onItemClick(position: Int) {
                 //Toast.makeText(this@MainActivity, "You clicked on item no. $position",Toast.LENGTH_SHORT).show()
 
-                val intent = Intent ( this@MainActivity,SitesActivity::class.java)
-                intent.putExtra("heading",newArrayList[position].heading)
-                intent.putExtra("imageId",newArrayList[position].titleImage)
+                val intent = Intent(this@MainActivity, SitesActivity::class.java)
+                intent.putExtra("heading", newArrayList[position].heading)
+                intent.putExtra("imageId", newArrayList[position].titleImage)
                 intent.putExtra("desc", desc[position])
 
                 startActivity(intent)

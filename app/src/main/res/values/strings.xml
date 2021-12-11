@@ -1,9 +1,23 @@
 <resources>
-   <string name="app_name">descubre_antioquia</string>
+    <string name="app_name">descubre_antioquia</string>
 
-    <string name="sitio_1">Ejemplo 1</string>
-    <string name="sitio_2">Ejemplo 2</string>
-    <string name="sitio_3">Ejemplo 3</string>
-    <string name="sitio_4">Ejemplo 4</string>
-    <string name="sitio_5">Ejemplo 5</string>
+    <string name="sitio_1">Uno de los atractivos turísticos más importantes para visitar es El Peñón de Guatapé, conocido también como “La piedra del Peñol”. Es un monolito de 220 metros de altura ubicado entre los municipios de Guatapé y El Peñol, que cuenta con 702 escalones hasta la cima.
+     Una maravilla de la naturaleza, desde donde se puede ver la panorámica del embalse de más de 2.200 hectáreas de extensión, que consta de varias islas en tonos verdes rodeadas de aguas tranquilas que invitan a la contemplación y al descanso. Desde allí se observa la antigua ubicación del pueblo, puesto que se ha ubicado una cruz que emerge del agua y sirve de símbolo histórico. </string>
+    <string name="sitio_2">Santa Fe de Antioquia es un Pueblo Patrimonio de Colombia que guarda los tesoros históricos más importantes del período colonial y republicano en el departamento de Antioquia.
+     Situado a una hora y media de Medellín, a Santa Fe de Antioquia podrás llegar por tierra, por la carretera que va hacia el Urabá antioqueño. Cuenta con un clima cálido que oscila entre los 25 y 35 grados centígrados, donde te sorprenderá la vegetación de los parques de la ciudad, y la ornamentación de las casas que se ven cuando caminas por sus calles empedradas bajo el cielo azul. </string>
+    Santa Fe de Antioquia es uno de los pueblos más hermosos y tradicionales de Colombia, en el que
+    puedes conocer de primera mano las características de los pueblos coloniales de nuestro país. No
+    te quedes sin dejarte sorprender por esta población.
+    <string name="sitio_3">En Colombia existen 17 pueblos patrimonio y Jardín, Antioquia hace parte de este selecto grupo gracias a su encanto particular. Déjate cautivar por la naturaleza que lo rodea, su cultura y la diversidad de tradiciones que tiene.
+    Este pueblito paisa también cuenta con lugares mágicos. Vive un ambiente natural en la Cascada del Amor, pasa una tarde tranquila en el parque El Libertador o planea una tarde de ecoturismo por el Camino de la Herrera.
+     El clima fresco te cautivará por completo y seguramente querrás regresar de nuevo.</string>
+    <string name="sitio_4">El Estadio Atanasio Girardot es un campo deportivo del Área Metropolitana del Valle de Aburrá, en Colombia, y forma parte de la Unidad Deportiva Atanasio Girardot. Este escenario deportivo fue sede del Mundial de fútbol sub-20 de 2011, así como el escenario de inauguración de los IX Juegos Suramericanos Medellín 2010.</string>
+    <string name="sitio_5"> Este acogedor antioqueño como conocido la municipio pintoresco y
+    “Atenas del suroeste antioqueño”, hace parte de la Red de Pueblos Patrimonio de Colombia y se
+    encuentra a 104 kilómetros de Medellín por vía terrestre. La belleza natural de su topografía
+    quebrada y el estilo republicano de la arquitectura de sus construcciones, hacen de Jericó uno
+    de los pueblos más hermosos de esta región.
+    Jericó es un centro turístico antioqueño hermoso, abierto para recibir cada año a miles de
+    visitantes motivados por sus atractivos culturales y naturales entre los que se encuentran
+    verdaderas joyas dignas de ser visitadas y experimentadas.</string>
 </resources>
