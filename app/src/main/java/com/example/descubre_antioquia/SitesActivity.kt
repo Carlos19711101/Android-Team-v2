@@ -15,6 +15,7 @@ class SitesActivity : AppCompatActivity() {
         val descSite: TextView = findViewById(R.id.desc)
         val imageSite: ImageView = findViewById(R.id.image_heading)
 
+
         val bundle: Bundle? = intent.extras
         val heading = bundle!!.getString("heading")
         val imageId = bundle.getInt("imageId")
@@ -23,6 +24,7 @@ class SitesActivity : AppCompatActivity() {
         headingSite.text = heading
         descSite.text = desc
         imageSite.setImageResource(imageId)
+
 
     }
 }

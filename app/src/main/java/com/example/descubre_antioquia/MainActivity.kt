@@ -2,6 +2,7 @@ package com.example.descubre_antioquia
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -84,6 +85,12 @@ class MainActivity : AppCompatActivity() {
 
             }
         })
+
+        val buttonClick = findViewById<Button>(R.id.button_ajustes)
+        buttonClick.setOnClickListener {
+            val intent = Intent(this, ajustesActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }
