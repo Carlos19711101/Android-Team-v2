@@ -1,18 +1,9 @@
 <resources>
-    <string name="app_name">Descubre_Antioquia</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+   <string name="app_name">descubre_antioquia</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="departamento">Antioquia</string>
-    <string name="general_info">Antioquia es uno de los departamentos de Colombia. Está localizado en la zona noroccidental del país. Su capital es Medellín, segunda ciudad en población y economía de la nación.
-En Antioquia, los veranos son cortos y cálidos, los inviernos son cortos y calurosos y está mojado y nublado todo el año.</string>
-    <string name="sitios_recomendados_title">Sitios recomendados</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sitio_1">Ejemplo 1</string>
+    <string name="sitio_2">Ejemplo 2</string>
+    <string name="sitio_3">Ejemplo 3</string>
+    <string name="sitio_4">Ejemplo 4</string>
+    <string name="sitio_5">Ejemplo 5</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.descubre_antioquia
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var imageId :Array<Int>
     lateinit var heading : Array<String>
     lateinit var detail : Array<String>
+    lateinit var desc : Array<String>
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +45,16 @@ class MainActivity : AppCompatActivity() {
             "Campo deportivo del Área Metropolitana del Valle de Aburrá","La Atenas del suroeste antioqueño"
         )
 
+        desc = arrayOf(
+            getString(R.string.sitio_1),
+            getString(R.string.sitio_2),
+            getString(R.string.sitio_3),
+            getString(R.string.sitio_4),
+            getString(R.string.sitio_5)
+        )
+
+
+
         newRecyclerView = findViewById(R.id.recyclerView)
         newRecyclerView.layoutManager = LinearLayoutManager(this)
         newRecyclerView.setHasFixedSize(true)
@@ -60,7 +73,16 @@ class MainActivity : AppCompatActivity() {
         newRecyclerView.adapter = adapter
         adapter.setOnItemClickListener(object:RecyclerAdapter.onItemClickListener{
             override fun onItemClick(position:Int){
-                Toast.makeText(this@MainActivity, "You clicked on item no. $position",Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@MainActivity, "You clicked on item no. $position",Toast.LENGTH_SHORT).show()
+
+                val intent = Intent ( this@MainActivity,SitesActivity::class.java)
+                intent.putExtra("heading",newArrayList[position].heading)
+                intent.putExtra("imageId",newArrayList[position].titleImage)
+                intent.putExtra("desc", desc[position])
+
+                startActivity(intent)
+
+
             }
         })
     }
